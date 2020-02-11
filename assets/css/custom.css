@@ -1,0 +1,254 @@
+/*
+  Theme Name: Bootstrap to WordPress
+  Author: Mueez Aslam
+  Version: 1.0
+*/
+
+/*Variable*/
+:root{
+  --green: #79b044;
+  --salmon: #dd5638;
+  --blueGray: #3e4249;
+}
+
+/*General*/
+body{
+  margin-top: 56px;
+  background: url(../img/tile.jpg)top left repeat;
+  font-family: 'Raleway', sans-sarif;
+  font-size: 16px;
+}
+
+/*Global*/
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+h1{
+  font-size: 3em;
+}
+h1,h2{
+  margin: 0 0 40px;
+}
+h3{
+  margin: 20px 0;
+  font-size: 1.5em;
+}
+h4{
+  font-size: 18px;
+}
+small{
+  font-size: 60%;
+}
+p.lead{
+  font-weight: normal;
+}
+p{
+  margin: 0 0 15px;
+}
+
+a:link, a:active{
+  color: var(--salmon);
+}
+a:hover{
+  color: #c9302c;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+section{
+  padding: 80px 0;
+}
+section h3{
+  margin: 30px 0 10px;
+}
+
+.btn, a.btn, button, input{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+.btn{
+  font-weight: bold;
+}
+.btn-danger{
+  background-color: var(--salmon);
+  border-color: var(--salmon);
+}
+.btn-success{
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+img{
+  max-width: 100%;
+}
+
+/*Header => Navbar*/
+.navbar-brand{
+  line-height: 0;
+}
+
+/*Hero Section*/
+#hero {
+  background: url(../img/hero-bg.jpg) 50% 0 repeat fixed;
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+#price-timeline{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#price-timeline .price{
+  flex-basis: 32%;
+  background-color: var(--blueGray);
+  padding: 10px 20px 30px;
+  position: relative;
+}
+#price-timeline .price h4 small{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#price-timeline .price span{
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #101010;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  margin-left: -35px;
+}
+#price-timeline .price.active{
+  background-color: var(--salmon);
+}
+
+/*OPT IN SECTION*/
+#optin{
+  background-color: var(--blueGray);
+}
+#optin p{
+  padding-top: 5px;
+}
+
+/*Course Features*/
+#course-features{
+  background-color: var(--blueGray);
+}
+/*Custom icon sprites*/
+i.ci{
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon-sprite.png) no-repeat;
+  display: inline-block;
+}
+
+.ci.ci-computer {background-position: 0 0;}
+.ci.ci-watch {background-position: -40px 0;}
+.ci.ci-calendar {background-position: -80px 0;}
+.ci.ci-people {background-position: -120px 0;}
+.ci.ci-person {background-position: -160px 0;}
+.ci.ci-phone {background-position: -200px 0;}
+
+/*featurette*/
+#featurette{
+  background: url(../img/stuff-bg.jpg) 100% 50% repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+/*Instructor*/
+#instructor {
+  background: url(../img/brad-elvis.png) 90% 0 no-repeat;
+  background-size: contain;
+}
+#instructor .social a i {
+  width: 40px;
+  height: 40px;
+  background: #CCCCCC;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 43px;
+  font-size: 1.5em;
+  color: white;
+}
+#instructor .social a i:hover {
+    color: var(--salmon);
+}
+#instructor .num {
+  height: 140px;
+  width: 140px;
+  background: var(--salmon);
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#instructor .num span:first-child {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+#instructor .num span:last-child{
+  font-size: 1.2em;
+}
+
+/*Kudos*/
+#kudos cite{
+  font-style: normal;
+  font-size: 1.1em;
+  color: #777;
+}
+
+/*Sign Up*/
+#signup{
+  background: url(../img/hipster-stuff.jpg)center center repeat fixed;
+  padding: 140px 0;
+}
+
+/*Footer*/
+footer{
+  background: var(--blueGray);
+  padding: 15px 0 15px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+footer a:link, footer a:active{
+  color: white;
+}
+footer a.sign-up-link{
+  color: var(--salmon);
+}
+
+/*Modal*/
+div.modal .modal-content{
+  background: url(../img/tile.jpg)top left repeat;
+}
+div.modal small{
+  font-size: 70%;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 991px){
+  #instructor .container{
+    background-color: rgba(255,255,255,0.8);
+  }
+}
